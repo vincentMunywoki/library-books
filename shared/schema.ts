@@ -33,6 +33,7 @@ export const insertLoanSchema = createInsertSchema(loans)
   .extend({
     borrowerName: z.string().min(1, "Borrower name is required"),
   });
+  
 
 export type Book = typeof books.$inferSelect;
 export type InsertBook = z.infer<typeof insertBookSchema>;
