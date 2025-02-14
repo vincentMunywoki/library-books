@@ -29,7 +29,7 @@ A full-stack TypeScript application for managing a book lending library. Built w
 1. Clone the repository:
 ```bash
 git clone <repository-url>
-cd book-lending-library
+cd <project-name>
 ```
 
 2. Install dependencies:
