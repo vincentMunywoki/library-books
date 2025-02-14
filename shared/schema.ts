@@ -35,4 +35,7 @@ export const insertLoanSchema = createInsertSchema(loans)
   });
 
 
-
+  export type Book = typeof books.$inferSelect;
+  export type InsertBook = z.infer<typeof insertBookSchema>;
+  export type Loan = typeof loans.$inferSelect;
+  export type InsertLoan = z.infer<typeof insertLoanSchema>;
