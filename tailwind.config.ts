@@ -18,11 +18,4 @@ const config: Config = {
       },
     },
   },
-  plugins: [
-    require("@tailwindcss/forms"), // Adds better form styles
-    require("@tailwindcss/typography"), // Enhances text styles
-    require("@tailwindcss/aspect-ratio"), // Helps manage aspect ratios
-  ],
-};
 
-export default config;
