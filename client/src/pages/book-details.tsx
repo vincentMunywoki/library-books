@@ -12,6 +12,37 @@ import { apiRequest, queryClient } from "@/lib/queryClient";
 import { useToast } from "@/hooks/use-toast";
 import { format } from "date-fns";
 
+// Import necessary hooks and utilities from React Query for data fetching and mutations  
+import { useQuery, useMutation } from "@tanstack/react-query";  
+
+// Import the useLocation hook from Wouter for handling client-side routing  
+import { useLocation } from "wouter";  
+
+// Import react-hook-form for managing form state and validation  
+import { useForm } from "react-hook-form";  
+
+// Import Zod resolver to integrate Zod validation with react-hook-form  
+import { zodResolver } from "@hookform/resolvers/zod";  
+
+// Import UI components for styling and layout  
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";  
+import { Button } from "@/components/ui/button";  
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";  
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";  
+import { Input } from "@/components/ui/input";  
+
+// Import the schema for loan validation and TypeScript types for Book and Loan  
+import { insertLoanSchema, type Book, type Loan } from "@shared/schema";  
+
+// Import utility functions for API requests and caching  
+import { apiRequest, queryClient } from "@/lib/queryClient";  
+
+// Import a custom toast hook for displaying notifications  
+import { useToast } from "@/hooks/use-toast";  
+
+// Import date-fns for formatting dates  
+import { format } from "date-fns";  
+
 
 type Props = {
   params: { id: string };
