@@ -13,6 +13,7 @@ import { insertBookSchema, type Book } from "@shared/schema";
 import { apiRequest, queryClient } from "@/lib/queryClient";
 import { Search, Plus } from "lucide-react";
 
+
 export default function Books() {
   const [search, setSearch] = useState("");
   const { toast } = useToast();
