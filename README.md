@@ -1,6 +1,6 @@
 # Book Lending Library Application
 
-A full-stack TypeScript application for managing a book lending library. Built with React, Express, and shadcn/ui components.
+A full-stack TypeScript application for managing a book lending library. Built with React, Express, and shadcn/ui components..
 
 ## Features
 
