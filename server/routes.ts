@@ -12,6 +12,7 @@ export async function registerRoutes(app: Express) {
       const books = await storage.searchBooks(q);
       return res.json(books);
     }
+    
     const books = await storage.getBooks();
     res.json(books);
   });
