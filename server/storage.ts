@@ -8,6 +8,7 @@ export interface IStorage {
   createBook(book: InsertBook): Promise<Book>;
   updateBook(id: number, book: Partial<Book>): Promise<Book | undefined>;
   deleteBook(id: number): Promise<boolean>;
+
   
   // Loans
   getLoans(bookId?: number): Promise<Loan[]>;
