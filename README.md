@@ -42,7 +42,7 @@ npm install
 npm run dev
 ```
 
-The application will be available at the URL provided in your Replit environment.
+
 
 ## Development
 
