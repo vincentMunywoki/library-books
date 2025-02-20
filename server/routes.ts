@@ -4,6 +4,7 @@ import { storage } from "./storage";
 import { insertBookSchema, insertLoanSchema } from "@shared/schema";
 import { z } from "zod";
 
+
 export async function registerRoutes(app: Express) {
   // Books
   app.get("/api/books", async (req, res) => {
