@@ -4,6 +4,7 @@ A full-stack TypeScript application for managing a book lending library. Built w
 
 ## Features
 
+
 -  Book management (add, view, search)
 -  Book lending tracking
 -  Beautiful UI with shadcn/ui components
